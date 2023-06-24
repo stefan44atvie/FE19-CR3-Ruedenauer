@@ -1,0 +1,18 @@
+@font-face {
+  font-family: Komicak;
+  src: url(../../assets/fonts/Komicak.ttf);
+}
+.home {
+  background-color: aliceblue;
+  height: 100vh;
+  padding: 10px;
+  padding-top: 15px;
+}
+.home p {
+  font-family: Komicak;
+  text-align: center;
+}
+.home h3 {
+  font-family: Komicak;
+  text-align: center;
+}/*# sourceMappingURL=home.component.css.map */

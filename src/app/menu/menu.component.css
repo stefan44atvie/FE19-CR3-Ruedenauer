@@ -1,0 +1,18 @@
+@font-face {
+  font-family: Komicak;
+  src: url(../../assets/fonts/Komicak.ttf);
+}
+.menu {
+  background-color: aliceblue;
+  height: 100vh;
+  padding: 10px;
+  padding-top: 15px;
+}
+.menu p {
+  font-family: Komicak;
+  text-align: center;
+}
+.menu h3 {
+  font-family: Komicak;
+  text-align: center;
+}/*# sourceMappingURL=menu.component.css.map */

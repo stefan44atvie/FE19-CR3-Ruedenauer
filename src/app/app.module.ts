@@ -10,6 +10,9 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { MenuComponent } from './menu/menu.component';
 import { DetailsComponent } from './details/details.component';
 import { OrderComponent } from './order/order.component';
+import { HeroComponent } from './hero/hero.component';
+import { HeroAboutComponent } from './hero-about/hero-about.component';
+import { HeroMenuComponent } from './hero-menu/hero-menu.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { OrderComponent } from './order/order.component';
     AboutUsComponent,
     MenuComponent,
     DetailsComponent,
-    OrderComponent
+    OrderComponent,
+    HeroComponent,
+    HeroAboutComponent,
+    HeroMenuComponent
   ],
   imports: [
     BrowserModule,
