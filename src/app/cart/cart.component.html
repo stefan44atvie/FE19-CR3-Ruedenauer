@@ -23,6 +23,14 @@
                 <td class="total">Total: </td>
                 <td class="sum">{{totalsum}}</td>
             </tr>
+            <tr *ngIf="this.totalsum>40">
+                <td class="total">Discount: </td>
+                <td class="sum">{{discount}}</td>
+            </tr>
+            <tr *ngIf="this.totalsum>40">
+                <td class="total">End sum: </td>
+                <td class="sum">{{endtotal}}</td>
+            </tr>
         </tbody>
     </table>
         

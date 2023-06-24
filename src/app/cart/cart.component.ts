@@ -12,6 +12,9 @@ export class CartComponent {
   total: number = 0;
   fees: number = 0;
   totalsum: number = 0;
+  totalwsum:number = 0;
+  discount: number = 0;
+  endtotal: number = 0;
 
   constructor(private cartService: CartServiceService){}
 
@@ -19,7 +22,9 @@ export class CartComponent {
     this.cart = this.cartService.getCart();
     this.total = this.cartService.calculateTotal();
     this.fees = this.cartService.calculateFee();
-    this.totalsum = this.total + this.fees;
+    this.discount = this.cartService.calculateDiscount();
+    this.totalsum = this.cartService.calculateTotalSum();
+    this.endtotal = this.cartService.calculateEndTotal();
   }
 
 }
