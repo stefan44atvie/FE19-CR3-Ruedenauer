@@ -13,6 +13,10 @@ import { OrderComponent } from './order/order.component';
 import { HeroComponent } from './hero/hero.component';
 import { HeroAboutComponent } from './hero-about/hero-about.component';
 import { HeroMenuComponent } from './hero-menu/hero-menu.component';
+import { DishDetailsComponent } from './dish-details/dish-details.component';
+import { HeroDetailsComponent } from './hero-details/hero-details.component';
+import { CartComponent } from './cart/cart.component';
+import { HeroCartComponent } from './hero-cart/hero-cart.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { HeroMenuComponent } from './hero-menu/hero-menu.component';
     OrderComponent,
     HeroComponent,
     HeroAboutComponent,
-    HeroMenuComponent
+    HeroMenuComponent,
+    DishDetailsComponent,
+    HeroDetailsComponent,
+    CartComponent,
+    HeroCartComponent
   ],
   imports: [
     BrowserModule,

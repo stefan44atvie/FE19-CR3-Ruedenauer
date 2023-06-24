@@ -5,7 +5,7 @@
 
 .menu{
     background-color:aliceblue;
-    height:100vh;
+    height:200vh;
     padding:10px;
     padding-top:15px;
     
@@ -17,4 +17,26 @@
         font-family:Komicak;
         text-align:center;
     }
+}
+.drinks{
+    padding-top:10px;
+
+    p{
+        text-align:left;
+    }
+}
+.dishes{
+    padding-top:10px;
+
+    p{
+        text-align: left;
+    }
+}
+a{
+    margin:5px;
+}
+
+.novail{
+    font-style: italic;
+    color:red;
 }

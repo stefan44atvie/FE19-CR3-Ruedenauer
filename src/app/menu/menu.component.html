@@ -1,5 +1,31 @@
 <app-hero-menu></app-hero-menu>
 
 <div class="menu">
-    <p>menu works!</p>
+    <div class="drinks">
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1">
+            <div *ngFor="let product of products, index as y">
+                <div *ngIf="product.availability; else nottrue"class="card mt-2" style="width: 18rem;">
+                    <img src="{{product.image}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title ptitle text-center">{{product.name}}</h5>
+                      <p class="card-text">Price: {{product.price}}</p>
+                      <a routerLink="/product/{{y}}" class="btn btn-primary">Details</a>
+                     <!-- <button (click)="addToCart(y)" class="btn btn-primary">Add to your menu</button> -->
+                     <button  class="btn btn-primary">Add to your menu</button> 
+
+                    </div>
+                  </div>
+                  <ng-template #nottrue>
+                    <div class="card mt-2" style="width: 18rem;">
+                      <img src="{{product.image}}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title ptitle text-center">{{product.name}}</h5>
+                        <p class="card-text novail">This product is currently not available</p>
+                      </div>
+                    </div>
+                  </ng-template>
+            </div>
+        </div>
 </div>
+
+

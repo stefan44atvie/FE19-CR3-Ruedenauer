@@ -1,0 +1,33 @@
+<app-hero-cart></app-hero-cart>
+<div class="container  cart">
+   
+    <table class="table table-striped table-light">
+        <tbody>
+            <tr>
+                <th>Article</th>
+                <th>Price/item</th>
+            </tr>    
+            <tr *ngFor="let item of cart">
+                    <td>{{item.name}}</td>
+                    <td>{{item.price}}</td>
+            </tr> 
+            <tr>
+                <td class="total">Net sum</td>
+                <td class="sum">{{total}}</td>
+            </tr>
+            <tr>
+                <td class="total">Fees</td>
+                <td class="sum">{{fees}}</td>
+            </tr>
+            <tr>
+                <td class="total">Total: </td>
+                <td class="sum">{{totalsum}}</td>
+            </tr>
+        </tbody>
+    </table>
+        
+      <!-- <p>{{item.name}}</p>
+        <p>Price/item: {{item.price}}</p>
+        <hr>
+    </div> -->
+</div>
